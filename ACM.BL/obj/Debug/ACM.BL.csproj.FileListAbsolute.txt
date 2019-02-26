@@ -4,3 +4,9 @@ C:\Users\Rasmus\Desktop\Main drive\Programming\ACM\ACM.BL\obj\Debug\ACM.BL.cspro
 C:\Users\Rasmus\Desktop\Main drive\Programming\ACM\ACM.BL\obj\Debug\ACM.BL.csproj.CoreCompileInputs.cache
 C:\Users\Rasmus\Desktop\Main drive\Programming\ACM\ACM.BL\obj\Debug\ACM.BL.dll
 C:\Users\Rasmus\Desktop\Main drive\Programming\ACM\ACM.BL\obj\Debug\ACM.BL.pdb
+C:\Users\rasmu\Desktop\Main drive\Programming\ACM\ACM.BL\bin\Debug\ACM.BL.dll
+C:\Users\rasmu\Desktop\Main drive\Programming\ACM\ACM.BL\bin\Debug\ACM.BL.pdb
+C:\Users\rasmu\Desktop\Main drive\Programming\ACM\ACM.BL\obj\Debug\ACM.BL.csprojAssemblyReference.cache
+C:\Users\rasmu\Desktop\Main drive\Programming\ACM\ACM.BL\obj\Debug\ACM.BL.csproj.CoreCompileInputs.cache
+C:\Users\rasmu\Desktop\Main drive\Programming\ACM\ACM.BL\obj\Debug\ACM.BL.dll
+C:\Users\rasmu\Desktop\Main drive\Programming\ACM\ACM.BL\obj\Debug\ACM.BL.pdb
