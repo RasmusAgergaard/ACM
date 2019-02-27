@@ -8,7 +8,8 @@ namespace ACM.BL
 {
     public class Customer
     {
-        public Customer()
+        public Customer() 
+            : this(0) //Call the other constructor with '0' as parameter
         {
 
         }
@@ -16,7 +17,10 @@ namespace ACM.BL
         public Customer(int cutomerId)
         {
             this.CustomerId = cutomerId;
+            AddressList = new List<Address>(); //Init the addresslist so that it is empty instead of null
         }
+
+        public List<Address> AddressList { get; set; }
 
         public static int InstanceCount { get; set; }
 

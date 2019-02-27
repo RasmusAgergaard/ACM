@@ -15,9 +15,10 @@ namespace ACM.BL
         /// <returns></returns>
         public Product Retrieve(int productId)
         {
-            //Temp hard coded values to return a populated product
+            //A new object is created to hold the retrived values
             Product product = new Product(productId);
 
+            //Temp hard coded values to return a populated product
             if (productId == 2)
             {
                 product.ProductName = "Sunflowers";

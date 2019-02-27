@@ -15,9 +15,10 @@ namespace ACM.BL
         /// <returns></returns>
         public Customer Retrieve(int customerId)
         {
-            //Temp hard coded values to return a populated customer
+            //A new object is created to hold the retrived values
             Customer customer = new Customer(customerId);
 
+            //Temp hard coded values to return a populated customer
             if (customerId == 1)
             {
                 customer.EmailAddress = "email@test.dk";

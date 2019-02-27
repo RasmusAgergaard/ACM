@@ -15,8 +15,10 @@ namespace ACM.BL
         /// <returns></returns>
         public Order Retrieve(int orderId)
         {
+            //A new object is created to hold the retrived values
             Order order = new Order(orderId);
 
+            //Temp hard coded values to return a populated order
             if (orderId == 10)
             {
                 //You need to add the DateTimeOffset here
