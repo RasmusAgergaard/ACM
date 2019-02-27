@@ -28,6 +28,53 @@ namespace ACM.BL
             return order;
         }
 
+        public OrderDisplay RetriveOrderDisplay(int orderId)
+        {
+            OrderDisplay orderDisplay = new OrderDisplay();
+
+            //Temp hardcoded data - Should be a database call of something
+            if (orderId == 10)
+            {
+                orderDisplay.FirstName = "Ole";
+                orderDisplay.LastName = "Hansen";
+                orderDisplay.OrderDate = new DateTimeOffset(2014, 4, 14, 14, 14, 14, new TimeSpan());
+                orderDisplay.ShippingAddress = new Address()
+                {
+                    AddressType = 1,
+                    StreetLine1 = "Road",
+                    StreetLine2 = "34B",
+                    City = "Small-town",
+                    State = "Sooner state",
+                    Country = "USA",
+                    PostalCode = "144"
+                };
+            }
+
+            orderDisplay.orderDisplayItemList = new List<OrderDisplayItem>();
+
+            //Temp hardcoded data - Should be a database call of something
+            if (orderId == 10)
+            {
+                var orderDisplayItem = new OrderDisplayItem()
+                {
+                    ProductName = "Rice",
+                    PurchasePrice = 6M,
+                    OrderQuantity = 1
+                };
+                orderDisplay.orderDisplayItemList.Add(orderDisplayItem);
+
+                orderDisplayItem = new OrderDisplayItem()
+                {
+                    ProductName = "Rake",
+                    PurchasePrice = 6M,
+                    OrderQuantity = 1
+                };
+                orderDisplay.orderDisplayItemList.Add(orderDisplayItem);
+            }
+
+            return orderDisplay;
+        }
+
         /// <summary>
         /// Saves the current order
         /// </summary>

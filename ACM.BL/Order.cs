@@ -18,8 +18,11 @@ namespace ACM.BL
             this.OrderId = orderId;
         }
 
+        public int CustomerId { get; set; }
+        public int ShippingAddressId { get; set; }
         public DateTimeOffset? OrderDate { get; set; } //The '?' makes this propperty nullable
         public int OrderId { get; private set; }
+        public List<OrderItem> orderItems { get; set; }
 
         /// <summary>
         /// Validates the order data

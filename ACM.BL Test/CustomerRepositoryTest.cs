@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ACM.BL;
+using System.Collections.Generic;
 
 namespace ACM.BL_Test
 {
@@ -31,6 +32,51 @@ namespace ACM.BL_Test
             Assert.AreEqual(expected.EmailAddress, actual.EmailAddress);
             Assert.AreEqual(expected.FirstName, actual.FirstName);
             Assert.AreEqual(expected.LastName, actual.LastName);
+        }
+
+        [TestMethod]
+        public void RetriveExistingWithAddress()
+        {
+            //Arrange
+            var customerRepository = new CustomerRepository();
+            var expected = new Customer(1)
+            {
+                EmailAddress = "email@test.dk",
+                FirstName = "Ole",
+                LastName = "Hansen",
+                AddressList = new List<Address>()
+                {
+                    new Address()
+                    {
+                        AddressType = 1,
+                        StreetLine1 = "Westroad",
+                        StreetLine2 = "205A",
+                        City = "Small-town",
+                        State = "Small-state",
+                        Country = "USA",
+                        PostalCode = "445544"
+                    },
+                    new Address()
+                    {
+                        AddressType = 2,
+                        StreetLine1 = "Eastroad",
+                        StreetLine2 = "452B",
+                        City = "Small-town",
+                        State = "Small-state",
+                        Country = "USA",
+                        PostalCode = "445544"
+                    }
+                }
+            };
+
+            //Act
+            var actual = customerRepository.Retrieve(1);
+
+            //Assert
+            Assert.AreEqual(expected.CustomerId, actual.CustomerId);
+            //More asserts
+
+            //A loop that checks both addresses
         }
     }
 }
