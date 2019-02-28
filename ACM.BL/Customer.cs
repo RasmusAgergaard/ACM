@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Acme.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class Customer : EntiyiBase
+    public class Customer : EntiyiBase, ILoggable
     {
         public Customer() 
             : this(0) //Call the other constructor with '0' as parameter
@@ -86,6 +87,15 @@ namespace ACM.BL
         public override string ToString()
         {
             return FullName;
+        }
+
+        public string Log()
+        {
+            var logString = this.CustomerId + ": " +
+                            this.FullName + " " +
+                            "Email: " + this.EmailAddress + " " +
+                            "Status: " + this.EntityState.ToString();
+            return logString;
         }
     }
 }

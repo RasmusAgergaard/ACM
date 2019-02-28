@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class Product : EntiyiBase
+    public class Product : EntiyiBase, ILoggable
     {
         public Product()
         {
@@ -24,7 +24,6 @@ namespace ACM.BL
         public string ProductDescription { get; set; }
 
         private string _ProductName;
-
         public string ProductName
         {
             get
@@ -60,10 +59,18 @@ namespace ACM.BL
             return isValid;
         }
 
-
         public override string ToString() //Overrides the ToString method of the base class (Object class)
         {
             return ProductName;
+        }
+
+        public string Log()
+        {
+            var logString = this.ProductId +
+                            this.ProductName + " " +
+                            "Details: " + this.ProductDescription + " " +
+                            "Status: " + this.EntityState.ToString();
+            return logString;
         }
     }
 }
