@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class Order
+    public class Order : EntiyiBase
     {
         public Order()
         {
@@ -28,7 +28,7 @@ namespace ACM.BL
         /// Validates the order data
         /// </summary>
         /// <returns></returns>
-        public bool Validate()
+        public override bool Validate()
         {
             bool isValid = true;
 
@@ -38,6 +38,11 @@ namespace ACM.BL
             }
 
             return isValid;
+        }
+
+        public override string ToString()
+        {
+            return OrderDate.Value.Date + " (" + OrderId + ")";
         }
     }
 }

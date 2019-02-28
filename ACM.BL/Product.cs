@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Acme.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class Product
+    public class Product : EntiyiBase
     {
         public Product()
         {
@@ -21,13 +22,28 @@ namespace ACM.BL
         public Decimal? CurrentPrice { get; set; } //The '?' makes this propperty nullable
         public int ProductId { get; private set; }
         public string ProductDescription { get; set; }
-        public string ProductName { get; set; }
+
+        private string _ProductName;
+
+        public string ProductName
+        {
+            get
+            {
+                return _ProductName.InsertSpaces();
+            }
+
+            set
+            {
+                _ProductName = value;
+            }
+        }
+
 
         /// <summary>
         /// Validates the product data
         /// </summary>
         /// <returns></returns>
-        public bool Validate()
+        public override bool Validate()
         {
             bool isValid = true;
 
@@ -42,6 +58,12 @@ namespace ACM.BL
             }
 
             return isValid;
+        }
+
+
+        public override string ToString() //Overrides the ToString method of the base class (Object class)
+        {
+            return ProductName;
         }
     }
 }

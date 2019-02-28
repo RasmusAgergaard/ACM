@@ -30,3 +30,5 @@ C:\Users\rasmu\Desktop\Main drive\Programming\ACM\ACM.BL Test\obj\Debug\ACM.BL T
 C:\Users\rasmu\Desktop\Main drive\Programming\ACM\ACM.BL Test\obj\Debug\ACM.BL Test.csproj.CopyComplete
 C:\Users\rasmu\Desktop\Main drive\Programming\ACM\ACM.BL Test\obj\Debug\ACM.BL Test.dll
 C:\Users\rasmu\Desktop\Main drive\Programming\ACM\ACM.BL Test\obj\Debug\ACM.BL Test.pdb
+C:\Users\rasmu\Desktop\Main drive\Programming\ACM\ACM.BL Test\bin\Debug\Acme.Common.dll
+C:\Users\rasmu\Desktop\Main drive\Programming\ACM\ACM.BL Test\bin\Debug\Acme.Common.pdb

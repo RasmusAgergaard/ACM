@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ACM.BL
 {
-    public class Customer
+    public class Customer : EntiyiBase
     {
         public Customer() 
             : this(0) //Call the other constructor with '0' as parameter
@@ -66,7 +66,7 @@ namespace ACM.BL
 
         public string EmailAddress { get; set; }
 
-        public bool Validate()
+        public override bool Validate()
         {
             bool isValid = true;
 
@@ -81,6 +81,11 @@ namespace ACM.BL
             }
 
             return isValid;
+        }
+
+        public override string ToString()
+        {
+            return FullName;
         }
     }
 }

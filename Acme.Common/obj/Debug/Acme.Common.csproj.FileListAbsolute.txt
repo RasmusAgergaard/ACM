@@ -1,0 +1,6 @@
+C:\Users\rasmu\Desktop\Main drive\Programming\ACM\Acme.Common\bin\Debug\Acme.Common.dll
+C:\Users\rasmu\Desktop\Main drive\Programming\ACM\Acme.Common\bin\Debug\Acme.Common.pdb
+C:\Users\rasmu\Desktop\Main drive\Programming\ACM\Acme.Common\obj\Debug\Acme.Common.csprojAssemblyReference.cache
+C:\Users\rasmu\Desktop\Main drive\Programming\ACM\Acme.Common\obj\Debug\Acme.Common.csproj.CoreCompileInputs.cache
+C:\Users\rasmu\Desktop\Main drive\Programming\ACM\Acme.Common\obj\Debug\Acme.Common.dll
+C:\Users\rasmu\Desktop\Main drive\Programming\ACM\Acme.Common\obj\Debug\Acme.Common.pdb

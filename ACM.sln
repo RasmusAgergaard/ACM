@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{AAB4D228
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACM.BL Test", "ACM.BL Test\ACM.BL Test.csproj", "{C756E1EB-6B2A-41E2-9886-971B932989BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.Common", "Acme.Common\Acme.Common.csproj", "{86132393-F74A-409A-B49F-7198C002C89C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Acme.CommenTest", "Acme.CommenTest\Acme.CommenTest.csproj", "{130DD6B3-4CE0-4DDA-83AC-19A86283E740}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +27,21 @@ Global
 		{C756E1EB-6B2A-41E2-9886-971B932989BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C756E1EB-6B2A-41E2-9886-971B932989BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C756E1EB-6B2A-41E2-9886-971B932989BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86132393-F74A-409A-B49F-7198C002C89C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86132393-F74A-409A-B49F-7198C002C89C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86132393-F74A-409A-B49F-7198C002C89C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86132393-F74A-409A-B49F-7198C002C89C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{130DD6B3-4CE0-4DDA-83AC-19A86283E740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{130DD6B3-4CE0-4DDA-83AC-19A86283E740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{130DD6B3-4CE0-4DDA-83AC-19A86283E740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{130DD6B3-4CE0-4DDA-83AC-19A86283E740}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C756E1EB-6B2A-41E2-9886-971B932989BF} = {AAB4D228-7DA0-413F-9A02-F542D7537BDD}
+		{130DD6B3-4CE0-4DDA-83AC-19A86283E740} = {AAB4D228-7DA0-413F-9A02-F542D7537BDD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CDB9D52B-DA6D-4662-A3FB-96DA8E3722C7}
